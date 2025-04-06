@@ -1,16 +1,69 @@
-import React from 'react'
-import { NavLink} from 'react-router'
+import React, { useState } from 'react'
+import { NavLink } from 'react-router'
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
-    <nav className='h-40 text-gray-800  flex container mx-auto items-center justify-between px-2'>
-        <img src="thnder.png" alt="Logo" className='h-100' />
-        <ul className='flex gap-10 text-lg font-semibold'>
-          <li className='hover:text-blue-600 cursor-pointer'><NavLink to='/'>Home</NavLink></li>
-          <li className='hover:text-blue-600 cursor-pointer'>Services</li>
-          <li className='hover:text-blue-600 cursor-pointer'><NavLink to="/contact">Contact Us</NavLink></li>
-        </ul>
-        <button className='rounded-full py-2 px-5 text-orange-700 border border-orange-600'>Request Demo</button>
+    <nav className="relative flex items-center justify-between container mx-auto px-4 h-40 text-gray-800">
+      <NavLink to="/">
+        <img src="thnder.png" alt="Logo" className="h-100" />
+      </NavLink>
+      {/* Desktop Navigation */}
+      <ul className="hidden md:flex gap-10 text-lg font-semibold">
+        <li className="hover:text-orange-600 cursor-pointer">
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li className="hover:text-orange-600 cursor-pointer">
+          Services
+        </li>
+        <li className="hover:text-orange-600 cursor-pointer">
+          <NavLink to="/contact">Contact Us</NavLink>
+        </li>
+      </ul>
+      {/* Desktop Request Demo Button */}
+      <div className="hidden md:block">
+        <NavLink to="/contact">
+          <button className="rounded-full py-2 px-5 hover:bg-orange-300 text-orange-700 border border-orange-600">
+            Request Demo
+          </button>
+        </NavLink>
+      </div>
+      {/* Mobile Hamburger */}
+      <div className="md:hidden">
+        <button onClick={toggleMenu} className="text-gray-800 focus:outline-none">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      {/* Mobile Navigation Menu */}
+      {isMenuOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden">
+          <ul className="flex flex-col gap-4 p-4 text-lg font-semibold">
+            <li onClick={() => setIsMenuOpen(false)} className="hover:text-orange-600 cursor-pointer">
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li onClick={() => setIsMenuOpen(false)} className="hover:text-orange-600 cursor-pointer">
+              Services
+            </li>
+            <li onClick={() => setIsMenuOpen(false)} className="hover:text-orange-600 cursor-pointer">
+              <NavLink to="/contact">Contact Us</NavLink>
+            </li>
+            <li onClick={() => setIsMenuOpen(false)}>
+              <NavLink to="/contact">
+                <button className="w-full rounded-full py-2 px-5 hover:bg-orange-300 text-orange-700 border border-orange-600">
+                  Request Demo
+                </button>
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   )
 }

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 function MainLayout() {
     return(
-        <div>
+        <div className="background">
             <Header/>
             <Outlet/>
 <Footer/>

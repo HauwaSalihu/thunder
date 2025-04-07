@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 
 function Home() {
   return (
-    <div>
+    <div className='container mx-auto my-25'>
       <Hero/>
       </div>
   )

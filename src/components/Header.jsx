@@ -9,9 +9,11 @@ function Header() {
   }
 
   return (
-    <nav className="relative flex items-center justify-between container mx-auto px-4 h-40 text-gray-800">
+    <div className='container mx-auto'>
+
+    <nav className="relative flex items-center justify-between m-5 h-40 text-gray-800">
       <NavLink to="/">
-        <img src="thnder.png" alt="Logo" className="h-100" />
+        <img src="thnder.png" alt="Logo" className="lg:h-100 -mx-10 h-80" />
       </NavLink>
       {/* Desktop Navigation */}
       <ul className="hidden md:flex gap-10 text-lg font-semibold">
@@ -65,6 +67,7 @@ function Header() {
         </div>
       )}
     </nav>
+    </div>
   )
 }
 

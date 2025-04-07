@@ -13,7 +13,7 @@ function Header() {
 
     <nav className="relative flex items-center justify-between m-5 h-40 text-gray-800">
       <NavLink to="/">
-        <img src="thnder.png" alt="Logo" className="lg:h-100 -mx-10 h-80" />
+        <img src="thnder.png" alt="Logo" className="lg:h-120 -mx-10 h-100" />
       </NavLink>
       {/* Desktop Navigation */}
       <ul className="hidden md:flex gap-10 text-lg font-semibold">

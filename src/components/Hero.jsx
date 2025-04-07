@@ -11,14 +11,14 @@ function Hero() {
         </p>
         <div className='mt-8 flex gap-4'>
            <NavLink to={"https://forms.gle/JnSNWv9WQdM8Fzbn6"} target='_blank'>
-          <button className='bg-orange-600 text-white py-3 px-6 rounded-full text-lg font-medium hover:bg-orange-700 transition'>
+          <button className='bg-orange-600 text-white py-3 px-6 rounded-full text-sm lg:text-lg font-medium hover:bg-orange-700 transition'>
 
             Join the waitlist
           </button>
            </NavLink>
           <NavLink to={"/contact"}>
           
-          <button className='border border-orange-600 text-orange-600 py-3 px-6 rounded-full text-lg font-medium hover:bg-orange-100 transition'>
+          <button className='border border-orange-600 text-orange-600 py-3 px-6 rounded-full text-sm lg:text-lg font-medium hover:bg-orange-100 transition'>
             Partner With Us
           </button>
           </NavLink>

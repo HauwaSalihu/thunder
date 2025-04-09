@@ -2,7 +2,8 @@ import './App.css'
 import Home from './pages/Home';
 import MainLayout from './layout/Mainlayout'
 import {Route, Routes } from 'react-router';
-import Contact from './pages/Contact';
+import Contact from "./components/ThundrFinance/Contact"
+import Thunder from './pages/Thunder';
 function App() {
 
   return (
@@ -10,8 +11,9 @@ function App() {
      <Routes>
        <Route element={<MainLayout />}>
          <Route path="/" element={<Home />} />
-         <Route path="/contact" element={<Contact />} />
        </Route>
+         <Route path="/thunder" element={<Thunder />} />
+         <Route path="/thunder-contact" element={<Contact />} />
      </Routes>
   
   )

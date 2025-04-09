@@ -1,10 +1,14 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import Hero from '../components/Home/Hero'
+import About from '../components/Home/About'
+import Services from '../components/Home/Services'
 
 function Home() {
   return (
-    <div className='container mx-auto my-25'>
-      <Hero/>
+    <div className="font-sans text-gray-900 ">
+      <Hero />
+      <About />
+      <Services />
       </div>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router'
 
 function Footer() {
   return (
@@ -21,6 +22,11 @@ function Footer() {
             <i className="fab fa-twitter text-white"></i>
           </a>
         </div>
+        <div className=" flex items-center lg:pr-20 lg:h-30  h-20 text-gray-800">
+                <NavLink to="/">
+                <img src="/thnder.png" alt="" className='lg:w-100 w-70 -ml-[30px] -lg:ml-50' />
+                </NavLink>
+                </div>
       </div>
       <div>
         <h4 className="text-xl font-bold mb-2">Reach Us</h4>

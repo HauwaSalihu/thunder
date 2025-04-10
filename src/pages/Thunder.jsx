@@ -4,12 +4,14 @@ import Header from '../components/ThundrFinance/Header'
 import Footer from '../components/ThundrFinance/Footer'
 
 
+
 function Thunder() {
   return (
     
       <div className="background">
         <Header/>
    <Hero/>
+  
    <Footer/>
       </div>
   )

@@ -21,7 +21,9 @@ function Header() {
           <NavLink to="/thunder">Home</NavLink>
         </li>
         <li className="hover:text-orange-600 cursor-pointer">
+          <NavLink to="/services">
           Services
+          </NavLink>
         </li>
         <li className="hover:text-orange-600 cursor-pointer">
           <NavLink to="/thunder-contact">Contact Us</NavLink>
@@ -29,7 +31,7 @@ function Header() {
       </ul>
       {/* Desktop Request Demo Button */}
       <div className="hidden md:block">
-        <NavLink to="/contact">
+        <NavLink to="/thunder-contact">
           <button className="rounded-full py-2 px-5 hover:bg-orange-300 text-orange-700 border border-orange-600">
             Request Demo
           </button>
@@ -48,16 +50,19 @@ function Header() {
         <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden">
           <ul className="flex flex-col gap-4 p-4 text-lg font-semibold">
             <li onClick={() => setIsMenuOpen(false)} className="hover:text-orange-600 cursor-pointer">
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/thunder">Home</NavLink>
             </li>
             <li onClick={() => setIsMenuOpen(false)} className="hover:text-orange-600 cursor-pointer">
+              <NavLink to="/services">
+
               Services
+              </NavLink>
             </li>
             <li onClick={() => setIsMenuOpen(false)} className="hover:text-orange-600 cursor-pointer">
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/thunder-contact">Contact Us</NavLink>
             </li>
             <li onClick={() => setIsMenuOpen(false)}>
-              <NavLink to="/contact">
+              <NavLink to="/thunder-contact">
                 <button className="w-full rounded-full py-2 px-5 hover:bg-orange-300 text-orange-700 border border-orange-600">
                   Request Demo
                 </button>

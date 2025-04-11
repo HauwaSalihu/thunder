@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header';
 import Footer from "./Footer"
 
-const Contact = () => {
+const TContact = () => {
   const [result, setResult] = React.useState("")
 
   const onSubmit = async (event) => {
@@ -58,4 +58,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default TContact

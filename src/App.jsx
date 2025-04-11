@@ -5,8 +5,7 @@ import {Route, Routes } from 'react-router';
 import TContact from './components/ThundrFinance/TContact';
 import Thunder from './pages/Thunder';
 import Services from './components/ThundrFinance/Services';
-import Contact from './components/contact';
-
+import Contact from './components/Contact';
 function App() {
 
   return (

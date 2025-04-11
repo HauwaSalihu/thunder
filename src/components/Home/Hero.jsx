@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className="bg-gradient-to-br from-blue-200 to-blue-900 px-4 py-16">
+    <div className="bg-gradient-to-br from-blue-200 to-blue-900 px-4 py-26">
       <section className="text-white text-center max-w-5xl mx-auto py-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4">
           Tailored IT Solutions<br />for Your Business

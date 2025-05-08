@@ -15,7 +15,7 @@ const services = [
     title: "Crowdfunding for Business",
     highlight: "Raise Funds Fast",
     description:
-      "Thundr empowers entrepreneurs and SMEs to raise capital through community-powered crowdfunding. Whether you're launching a product or expanding operations, mobilize support quickly and efficiently.",
+      "Padi-Pay empowers entrepreneurs and SMEs to raise capital through community-powered crowdfunding. Whether you're launching a product or expanding operations, mobilize support quickly and efficiently.",
   },
   {
     icon: <FiSettings className="text-blue-600" size={20} />,
@@ -42,7 +42,7 @@ export default function Services() {
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-4 text-center">Our Services</h2>
         <p className="text-center text-gray-500 mb-12">
-          Thundr Finance is redefining the way you save, raise, and grow your money.
+          Padi-Pay is redefining the way you save, raise, and grow your money.
         </p>
 
         <div className="grid md:grid-cols-2 gap-10">

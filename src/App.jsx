@@ -15,7 +15,7 @@ function App() {
          <Route path="/" element={<Home />} />
 <Route path='/contact' element={<Contact />}/>
        </Route>
-         <Route path="/thunder" element={<Thunder />} />
+         <Route path="/padipay" element={<Thunder />} />
          <Route path="/thunder-contact" element={<TContact />} />
           <Route path="/services" element={<Services />} />
      </Routes>

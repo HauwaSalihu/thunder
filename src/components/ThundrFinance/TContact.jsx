@@ -46,7 +46,7 @@ const TContact = () => {
         </div>
         <textarea rows={6} placeholder='Enter Your Message' name='message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90'></textarea>
 
-        <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-orange-700 text-white rounded-full mx-auto  duration-500'>
+        <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-[#A020F0]  text-white rounded-full mx-auto  duration-500'>
           Submit now
         </button>
 

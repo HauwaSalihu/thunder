@@ -11,7 +11,7 @@ function Hero() {
         We’re a fintech startup building smart tools for digital savings, business crowdfunding, and simple investment options—rooted in the trusted Adashe model.
       </p>
       <p className='text-center text-base md:text-lg text-gray-500 mt-4 max-w-xl'>
-        Our mission is to drive financial inclusion, boost transparency, and create real opportunities for wealth building.
+      Now, with AI-powered financial guidance, users also receive personalized, real-time advice on saving, investing, debt management, and taxes—based on their unique financial behavior.
       </p>
       <div className='mt-8 flex gap-4'>
         <NavLink to={"https://forms.gle/JnSNWv9WQdM8Fzbn6"} target='_blank'>

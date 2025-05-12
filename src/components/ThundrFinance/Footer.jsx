@@ -6,7 +6,7 @@ function Footer() {
       <NavLink to="/">
 
       <p className='text-sm'>
-        Powered by <span className='font-bold text-[#A020F0] '>Thunder Infotech Concept</span>
+        Powered by <span className='font-bold text-orange-600 '>Thunder Infotech Concept</span>
       </p>
       </NavLink>
     </footer>

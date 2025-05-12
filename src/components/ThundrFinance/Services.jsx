@@ -1,5 +1,5 @@
 import React from "react";
-import { FiUsers, FiTrendingUp, FiSettings, FiBriefcase } from "react-icons/fi";
+import { FiUsers, FiTrendingUp, FiSettings, FiBriefcase, FiCpu } from "react-icons/fi";
 import Header from './Header';
 import Footer from "./Footer"
 const services = [
@@ -30,6 +30,13 @@ const services = [
     highlight: "Grow Your Savings",
     description:
       "Put your money to work with seamless investment options. Link your savings to vetted investment products directly within the app to earn more while you save.",
+  },
+  {
+    icon: <FiCpu className="text-blue-600" size={20} />,
+    title: "AI Financial Guidance",
+    highlight: "Smart, Personal Advice",
+    description:
+      "Get real-time financial advice tailored to your spending and saving behavior. Powered by AI, our smart assistant helps you manage debt, set savings goals, optimize investments, and plan for taxes — all in one place.",
   },
 ];
 

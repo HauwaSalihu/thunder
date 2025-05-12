@@ -24,7 +24,7 @@ function Header() {
                 </NavLink>
             </li>
             <li  className="hover:text-black hover:border-b-2 cursor-pointer">
-                <NavLink to="/padipay">
+                <NavLink to="/thundr">
                 Our Products
                 </NavLink>
             </li>
@@ -51,7 +51,7 @@ function Header() {
                   Services
                 </li>
                 <li onClick={() => setIsMenuOpen(false)}>
-                  <NavLink to="/padipay">
+                  <NavLink to="/thundr">
                    Our Products
                   </NavLink>
                 </li>
